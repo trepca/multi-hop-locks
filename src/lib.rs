@@ -90,17 +90,21 @@ pub struct LockParty0Message2 {
     s_tag: FE,
 }
 
+#[derive(Debug)]
 pub struct SL {
     w_0: FE,
     w_1: FE,
     pk: GE,
 }
 
+#[derive(Debug)]
 pub struct SR {
     s_tag: FE,
     message: FE,
 }
+use std::fmt;
 
+#[derive(Debug)]
 pub struct K {
     r: FE,
     s: FE,
